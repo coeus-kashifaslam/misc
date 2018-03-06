@@ -1,0 +1,18 @@
+{
+  "name": "starter",
+  "description": "",
+  "main": "build/index.html",
+  "authors": [
+    "coeus-kashifaslam <kashif.aslam@coeus-solutions.de>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/coeus-kashifaslam/starter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
