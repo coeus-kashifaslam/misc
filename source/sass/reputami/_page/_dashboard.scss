@@ -1,0 +1,71 @@
+.link__view-more {
+  margin-top: 15px;
+}
+.last__update {
+  margin-top: 20px;
+}
+.map-coordinates {
+  padding: 20px 0;
+  border-bottom: 1px solid $border;
+  margin-bottom: 20px;
+}
+.list-channels {
+  margin: 30px 0;
+  li {
+    width: 45px;
+    margin-bottom: 15px;
+    img {
+      display: inline-block;
+      max-width: 21px;
+    }
+  }
+}
+.progress-item {
+  margin-bottom: 30px;
+  .progress {
+    margin: 10px 0;
+  }
+}
+
+.box__status-details {
+  background: $bg-light;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  .status {
+    font-size: 11px;
+    line-height: 18px;
+    .fa {
+      font-size: 13px;
+    }
+  }
+
+  .date {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .item-badge {
+    background: $white;
+    border-radius: 16px;
+    padding: 0 5px;
+    &.badge-green {
+      color: $link-green;
+    }
+  }
+  .status-detail__inner-item {
+    position: relative;
+    + .status-detail__inner-item {
+      padding-left: 0;
+      &:before {
+        content: '';
+        width: 1px;
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        bottom: 10px;
+        background: $border;
+      }
+    }
+  }
+}

@@ -59,7 +59,7 @@
  	browsersyncOptions = {
 		server: {
 			baseDir: destination,
-			index: 'index.html'
+			index: 'reputami.html'
 		},
 		open: true,
 		notify: true
@@ -70,7 +70,7 @@
  * ...
  */
 	html = {
-		in: source + '*.html',
+		in: source + 'template/*.html',
 		out: destination
 	},
 
@@ -105,7 +105,7 @@
 	},
 
 	watch = {
-		html: [source + '*.html', source + 'template/**/*.html'],
+		html: [source + '*.html', source + 'template/*.html', source + 'template/**/*.html'],
 		sass: [source + 'sass/**/*.scss'],
 		fonts: [source + 'fonts/*'],
 		images: [source + 'images/*.*', source + 'images/**/*.*'],
