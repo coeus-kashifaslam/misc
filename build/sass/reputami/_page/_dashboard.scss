@@ -27,6 +27,14 @@
   }
 }
 
+.DashboardContent {
+  .box__status-details {
+    .row {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .box__status-details {
   background: $bg-light;
   border-radius: 16px;
@@ -69,3 +77,9 @@
     }
   }
 }
+
+
+
+
+
+
