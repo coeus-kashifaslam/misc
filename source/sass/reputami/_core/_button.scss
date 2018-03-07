@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 5px;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+.btn-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.btn-round {
+  border-radius: 40px;
+}
+.btn-green {
+  background: $link-green;
+}
+.btn-blue {
+  background: $btn-blue;
+}

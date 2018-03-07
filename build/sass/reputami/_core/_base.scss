@@ -3,6 +3,19 @@
   color: $info-dark;
 }
 
+
+//Forms
+input[type='text'] {
+  border: 1px solid $border;
+  display: block;
+  padding: 5px 15px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+
+//General
 label {
   @extend .label__light;
 }

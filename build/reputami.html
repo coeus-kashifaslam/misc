@@ -245,205 +245,350 @@
         <h3 class="panel-title"><i class="fa fa-map"></i>POI submission and publication details per channels</h3>
     </div>
     <div class="panel-body plr-0">
-        <div class="row">
-            <div class="rep__col-6">
-                <header class="section__header">
-                    <h3 class="section__header-title">Max</h3>
-                </header>
-                <div class="rep__col-body">
 
-                    <div class="item__status-details">
-                        <div class="box__status-details">
-                            <div class="row">
-                                <div class="rep__col-4 status-detail__inner-item">
-                                    <p class="status">
-                                                <span class="item-badge">
-                                                    <i class="fa fa-map-marker"></i> Active
-                                                </span>
-                                        <span> Since</span>
-                                    </p>
-                                    <p class="date">
-                                        Marc 23, 2016
-                                    </p>
+        <div class="poi__channel-details">
+            <div class="poi__channel-details__item">
+                <div class="poi__channel-details__face">
+                    <div class="row">
+                        <div class="rep__col-3">
+                            <ul class="channel__info list-inline">
+                                <li class="channel__thumbnail">
+                                    <img src="https://atlas.navads.eu/assets/images/maps-logo/APPLE.png" alt="image not found">
+                                </li>
+                                <li class="channel__name">
+                                    <p>Apple Maps</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rep__col-3">
+                            <div class="channel__status">
+                                <div class="status__label">
+                                    <label>Status</label>
                                 </div>
-                                <div class="rep__col-4 status-detail__inner-item">
-                                    <p class="status">
-                                                <span class="item-badge badge-green">
-                                                    <i class="fa fa-check-circle"></i> Last Cleansed
-                                                </span>
-                                    </p>
-                                    <p class="date">
-                                        Marc 23, 2016
-                                    </p>
+                                <div class="status__badge">
+                                    <p><i class="fa fa-check"></i><span>Published</span></p>
                                 </div>
-                                <div class="rep__col-4 status-detail__inner-item">
-                                    <p class="status">
-                                                <span class="item-badge badge-green">
-                                                    <i class="fa fa-check-circle"></i> First Cleansed
-                                                </span>
-                                    </p>
-                                    <p class="date">
-                                        Marc 23, 2016
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
                             </div>
                         </div>
-                    </div>
-
-                    <ul class="list-unstyled list-info-horizontal">
-                        <li>
-                            <div class="row">
-                                <div class="item-label rep__col-6">
-                                    <label>Some Label Text</label>
+                        <div class="rep__col-3">
+                            <div class="channel__publish-date">
+                                <div class="publish__label">
+                                    <label>Published since</label>
                                 </div>
-                                <div class="item-info rep__col-6">
-                                    <p>NVDS316-mb50 <span><a href="#">See categories mappings</a></span></p>
+                                <div class="publish__date">
+                                    <p>March 23, 2016</p>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="item-label rep__col-6">
-                                    <label>Some Label Text</label>
-                                </div>
-                                <div class="item-info rep__col-6">
-                                    <div class="venue">
-                                        <label>Mon-Fri</label>
-                                        <p>
-                                            <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
-                                        </p>
+                        </div>
+                        <div class="rep__col-3">
+                            <div class="channel__view-detail">
+                                <button class="btn btn-green">View Details</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="poi__channel-detail__accordion-container">
+                    <div class="poi__channel-detail__accordion">
+                        <div class="row">
+
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
                                     </div>
-                                    <div class="venue">
-                                        <label>Mon-Fri</label>
-                                        <p>
-                                            <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
-                                        </p>
-                                    </div>
-                                    <div class="venue">
-                                        <label>Mon-Fri</label>
-                                        <p>
-                                            <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
-                                        </p>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="row">
-                                <div class="item-label rep__col-6">
-                                    <label>Some Label Text</label>
-                                </div>
-                                <div class="item-info rep__col-6">
-                                    <a href="#">https://www.max.se/sv/Hitta-Max/Restauranger/Norrkoping-vid-ResecentrumNa-Promenaden/</a></p>
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
+                                    </div>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="link__view-more">
-                        <a href="#">View more detail</a>
-                    </div>
-                    <div class="last__update">
-                        <label class="label__light">Last Update</label>
-                        <p>March 01, 2018</p>
-                    </div>
-                </div>
-            </div>
-            <div class="rep__col-6">
-                <div class="area__google-map">
-                    <img src="http://via.placeholder.com/350x200" class="img-responsive">
-                    <div class="map-coordinates">
-                        <label>58.59737077 / 16.19090742</label>
-                    </div>
-                </div>
-                <div class="label__remaining d-table">
-                    <div class="label__remaining-text d-table-cell">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eius!</p>
-                    </div>
-                    <div class="label__remaining-count d-table-cell">
-                        <p>10 out of 10</p>
-                    </div>
-                </div>
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
+                                    </div>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rep__col-3">
+                                <div class="view-on-map-section">
+                                    <div class="map__url-input">
+                                        <input type="text" placeholder="enter url">
+                                        <div class="input-icon">
+                                            <i class="fa fa-files"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cta__view-on-map">
+                                        <button class="btn btn-blue btn-round btn-lg">View On Map</button>
+                                    </div>
+                                    <div class="note__view-on-map">
+                                        <p>View is possible for apple devices</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="list-channels">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="https://atlas.navads.eu/assets/images/maps-logo/BING.png" alt="not found" class="img-responsive">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="progress-item">
-                    <div class="label__remaining d-table">
-                        <div class="label__remaining-text d-table-cell">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eius!</p>
                         </div>
-                        <div class="label__remaining-count d-table-cell">
-                            <p>10 out of 10</p>
-                        </div>
-                    </div>
-
-                    <div class="progress progress__condense">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="label__remaining d-table">
-                        <div class="label__remaining-text d-table-cell">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eius!</p>
-                        </div>
-                        <div class="label__remaining-count d-table-cell">
-                            <p>10 out of 10</p>
-                        </div>
-                    </div>
-
-                    <div class="progress progress__condense">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                        <div class="row">
+                            <div class="channel__publication-details">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Original</th>
+                                            <th>Submitted</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label>Display Name</label>
+                                            </td>
+                                            <td>Max</td>
+                                            <td>Max</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Display Name</label>
+                                            </td>
+                                            <td>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                                <div class="venue">
+                                                    <label>Mon-Fri</label>
+                                                    <p>
+                                                        <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Display Name</label>
+                                            </td>
+                                            <td>Max</td>
+                                            <td>Max</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
+            <div class="poi__channel-details__item">
+                <div class="poi__channel-details__face">
+                    <div class="row">
+                        <div class="rep__col-3">
+                            <ul class="channel__info list-inline">
+                                <li class="channel__thumbnail">
+                                    <img src="https://atlas.navads.eu/assets/images/maps-logo/APPLE.png" alt="image not found">
+                                </li>
+                                <li class="channel__name">
+                                    <p>Apple Maps</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rep__col-3">
+                            <div class="channel__status">
+                                <div class="status__label">
+                                    <label>Status</label>
+                                </div>
+                                <div class="status__badge">
+                                    <p><i class="fa fa-check"></i><span>Published</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rep__col-3">
+                            <div class="channel__publish-date">
+                                <div class="publish__label">
+                                    <label>Published since</label>
+                                </div>
+                                <div class="publish__date">
+                                    <p>March 23, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rep__col-3">
+                            <div class="channel__view-detail">
+                                <button class="btn btn-green">View Details</button>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="poi__channel-detail__accordion-container">
+                    <div class="poi__channel-detail__accordion">
+                        <div class="row">
+
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
+                                    </div>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
+                                    </div>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rep__col-3">
+                                <div class="event__date">
+                                    <div class="even__label">
+                                        <label>First Submission date</label>
+                                    </div>
+                                    <div class="event__date">
+                                        <p>April 01, 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rep__col-3">
+                                <div class="view-on-map-section">
+                                    <div class="map__url-input">
+                                        <input type="text" placeholder="enter url">
+                                        <div class="input-icon">
+                                            <i class="fa fa-files"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cta__view-on-map">
+                                        <button class="btn btn-blue btn-round btn-lg">View On Map</button>
+                                    </div>
+                                    <div class="note__view-on-map">
+                                        <p>View is possible for apple devices</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="channel__publication-details">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Original</th>
+                                        <th>Submitted</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <label>Display Name</label>
+                                        </td>
+                                        <td>Max</td>
+                                        <td>Max</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Display Name</label>
+                                        </td>
+                                        <td>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                            <div class="venue">
+                                                <label>Mon-Fri</label>
+                                                <p>
+                                                    <span>00:00 - 02:00 </span><span>10:00 - 23:59</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Display Name</label>
+                                        </td>
+                                        <td>Max</td>
+                                        <td>Max</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
 
