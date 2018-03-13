@@ -1,4 +1,4 @@
-.container, .container-lg {
+.container {
   font-family: 'Signika', sans-serif;
   color: $info-dark;
 }
@@ -34,14 +34,11 @@ table, .table {
     text-align: left;
     padding: 15px;
   }
-}
-.table-bordered {
-  td, th {
-    border-bottom: 1px solid $border;
+  &.table-bordered {
+    td, th {
+      border-bottom: 1px solid $border;
+    }
   }
-}
-.font-sm {
-  font-size: 11px;
 }
 
 .img-responsive {

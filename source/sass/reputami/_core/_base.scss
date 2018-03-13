@@ -1,4 +1,4 @@
-.container {
+.container, .container-lg {
   font-family: 'Signika', sans-serif;
   color: $info-dark;
 }
@@ -25,6 +25,23 @@ label {
 p {
   margin: 0;
   line-height: 1.4;
+}
+
+table, .table {
+  width: 100%;
+  table-layout: fixed;
+  th, td {
+    text-align: left;
+    padding: 15px;
+  }
+}
+.table-bordered {
+  td, th {
+    border-bottom: 1px solid $border;
+  }
+}
+.font-sm {
+  font-size: 11px;
 }
 
 .img-responsive {
@@ -158,6 +175,7 @@ p {
     perspective: 100px;
     &:after,
     &:before {
+      cursor: pointer;
       display: inline-block;
       transition: all .4s ease;
       width: 100px;
@@ -166,7 +184,6 @@ p {
       line-height: 2em;
       font-weight: bold;
       color: #fff;
-      position: absolute;
       top: 0;
       left: 0;
       backface-visibility: hidden;

@@ -1,0 +1,144 @@
+{% extends 'reputami/_layout/default.html' %}
+{% set pageTitle = "Index" %}
+
+{% block content %}
+
+<div class="box-sizing__border">
+    <div class="container-lg">
+        {% include 'reputami/_partials/poi-list-filters.html' %}
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title plr-0">Total POIs found: <span>14</span></h3>
+            </div>
+            <div class="panel-body plr-0">
+                <div class="pois__list-table">
+                    <table class="table table-bordered font-sm">
+                        <thead>
+                        <tr>
+                            <th>POI Display Name</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State, Country</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a href="#">POI Display Name</a></td>
+                            <td><a href="#">Address</a></td>
+                            <td><a href="#">City</a></td>
+                            <td><a href="#">POI Display Name sfsa fsa asf as fs fdgdsgsdgsdg sdg dsgdsg</a></td>
+                            <td><a href="#">Category</a></td>
+                            <td><p class="status">To be cleansed</p></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">POI Display Name</a></td>
+                            <td><a href="#">Address</a></td>
+                            <td><a href="#">City</a></td>
+                            <td><a href="#">POI Display Name sfsa fsa asf as fs fdgdsgsdgsdg sdg dsgdsg</a></td>
+                            <td><a href="#">Category</a></td>
+                            <td><p class="status">To be cleansed</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="poi__list-pagination"></div>
+            </div>
+        </div>
+
+
+        <div class="row mtop30">
+            <div class="rep__col-6">
+                <div class="panel panel-equal-height panel__cleansing-detail">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-info-circle"></i> Submitted POIs per Chaannel</h3>
+                    </div>
+                    <div class="panel-body plr-0">
+
+                        <div class="rep__col-6 panel__chart"></div>
+                        <div class="rep__col-6 panel__chart-stats">
+                            <ul class="list-unstyled">
+                                <li class="cleansed">
+                                    Cleansed <br> <label>1 POIs</label>
+                                    <div class="stats__ratio">
+                                        <p>7.1%</p>
+                                    </div>
+                                </li>
+                                <li class="to-be-cleansed">
+                                    Cleansed <br> <label>1 POIs</label>
+                                    <div class="stats__ratio">
+                                        <p>7.1%</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="rep__col-6 panel-equal-height">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-info-circle"></i> Submitted POIs per Chaannel</h3>
+                    </div>
+                    <div class="panel-body plr-0">
+                        <div class="pois__submitted-table">
+                            <table class="table table-bordered font-sm">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Channels</th>
+                                    <th colspan="2">Submitted</th>
+                                    <th colspan="2">Verified</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><img src="https://atlas.navads.eu/assets/images/maps-logo/APPLE.png" alt="image not found" class="ico-35"></td>
+                                    <td>
+                                        <p>Address</p>
+                                        <label>Total: 11 POIs</label>
+                                    </td>
+                                    <td>
+                                        <p>Submitted</p>
+                                        <label>0 POIs</label>
+                                    </td>
+                                    <td><p>0%</p></td>
+                                    <td>
+                                        <p>Verififed</p>
+                                        <label>0 POIs</label>
+                                    </td>
+                                    <td><p>0%</p></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://atlas.navads.eu/assets/images/maps-logo/APPLE.png" alt="image not found" class="ico-35"></td>
+                                    <td>
+                                        <p>Address</p>
+                                        <label>Total: 11 POIs</label>
+                                    </td>
+                                    <td>
+                                        <p>Submitted</p>
+                                        <label>0 POIs</label>
+                                    </td>
+                                    <td><p>0%</p></td>
+                                    <td>
+                                        <p>Verififed</p>
+                                        <label>0 POIs</label>
+                                    </td>
+                                    <td><p>0%</p></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
