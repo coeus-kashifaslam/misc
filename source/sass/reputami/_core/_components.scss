@@ -37,7 +37,7 @@
   }
 }
 
-
+//Progress Bar
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -62,5 +62,44 @@
   }
   &__condense .progress-bar {
     line-height: 7px;
+  }
+}
+
+
+
+//Subnav
+.poi__sub-nav {
+  padding: 20px 0;
+  background: $bg-ex-light;
+}
+.subnav-list {
+  text-align: center;
+  > li {
+    padding-right: 15px;
+    + li {
+      padding-left: 15px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        bottom: 3px;
+        width: 2px;
+        background: $info-dark;
+      }
+    }
+  }
+  li {
+    position: relative;
+    a {
+      text-decoration: none;
+      color: $info-dark;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $theme-orange;
+        text-decoration: underline;
+      }
+    }
   }
 }
