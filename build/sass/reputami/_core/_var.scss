@@ -1,35 +1,39 @@
-$white: #fff;
-$border: #e0e0e0;
-$orange: #f16623;
-
-$label-light: #b3b3b3;
-$info-dark: #666;
-
 $font-size: 16px;
-$link-color: #6fb5fc;
-$link-green: #80d47f;
-
-
-$progress-idle: #f5f5f5;
-$progress-active: #337ab7;
-
-$bg-light: #f2f2f2;
-$bg-ex-light: #eeeeee;
-
 $panel-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 $shadow: 0 3px 3px 0 rgba(0,0,0,.1);
 $radius: 4px;
 
 
-$btn-blue: #286090;
+$white: #fff;
+$border: #e0e0e0;
 
-$cleansed: #6fb5fc;
-$toBeCleansed: #80d47f;
+$primary: #6FB5FC;
+$success: #80D47F;
+$warning: #FCC76F;
+$danger: #FC6F6F;
+$orange: #f16623;
+
+
+
+$label-light: #b3b3b3;
+$info-dark: #666;
+
+
+$bg-light: #f2f2f2;
+$bg-ex-light: #eeeeee;
+
+$progress-idle: #f5f5f5;
+$progress-active: $primary;
+
+$link-color: $primary;
+$link-green: $success;
+
+$btn-blue: $primary;
+$btn-green: $success;
+
+$cleansed: $success;
+$toBeCleansed: $primary;
 $theme-orange: $orange;
 
 
 
-$primary: #6FB5FC;
-$success: #80D47F;
-$warning: #FC6F6F;
-$danger: #FCC76F;

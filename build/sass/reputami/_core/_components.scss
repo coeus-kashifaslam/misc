@@ -14,6 +14,19 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
+  &-heading__dd-included {
+    position: relative;
+    padding: 15px 150px 15px 15px;
+    select {
+      width: 135px;
+    }
+  }
+  &-header__dropdown {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   &-title {
     margin-top: 0;
     margin-bottom: 0;

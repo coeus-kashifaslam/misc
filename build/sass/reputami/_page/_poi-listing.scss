@@ -212,6 +212,11 @@
         background: $toBeCleansed;
       }
     }
+    &.in-active {
+      &:before {
+        background: $danger;
+      }
+    }
     .stats__ratio {
       position: absolute;
       right: 0;
