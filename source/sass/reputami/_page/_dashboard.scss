@@ -33,3 +33,127 @@
     margin-top: 15px;
   }
 }
+
+.section-rate__map-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .section-rate__google-map {
+    border: 1px solid $border;
+    height: 547px;
+  }
+}
+
+.section__rate-blocks {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.rate-block-item {
+  padding: 23px 15px;
+  display: inline-table;
+  width: 100%;
+  border: 1px solid $border;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  box-shadow: $shadow;
+  .item-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .item-content__col {
+    padding-left: 15px;
+  }
+  .item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    .fa {
+      color: white;
+      font-size: 25px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.badge-primary {
+      background: $primary;
+    }
+    &.badge-success {
+      background: $success;
+    }
+    &.badge-warning {
+      background: $warning;
+    }
+    &.badge-danger {
+      background: $danger;
+    }
+  }
+  .item-header {
+    position: relative;
+    padding-right: 25px;
+    .item-title, .item-subtitle {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .item-subtitle {
+      font-weight: 300;
+    }
+  }
+  .item-tooltip-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .fa {
+      cursor: help;
+      &:hover {
+        + .tooltip-content {
+          display: block;
+        }
+      }
+    }
+    .tooltip-content {
+      display: none;
+      background: $info-dark;
+      color: $white;
+      position: absolute;
+      right: 25px;
+      top: -13px;
+      z-index: 9;
+      padding: 15px;
+      border-radius: $radius;
+      font-size: 12px;
+      width: 200px;
+      min-height: 45px;
+      &:before {
+        position: absolute;
+        top: 17px;
+        right: -7px;
+        display: inline-block;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid $info-dark;
+        content: '';
+      }
+    }
+  }
+
+  .item-footer {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .item-footer-cta {
+    font-size: 11px;
+    a {
+      color: $label-light;
+      text-decoration: none;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+
+      }
+    }
+  }
+
+}
