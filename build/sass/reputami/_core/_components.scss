@@ -9,7 +9,7 @@
     padding: 15px;
   }
   &-heading {
-    padding: 10px 15px;
+    padding: 15px;
     border-bottom: 1px solid $border;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -19,6 +19,9 @@
     padding: 15px 150px 15px 15px;
     select {
       width: 135px;
+    }
+    .panel-title {
+      padding-right: 0;
     }
   }
   &-header__dropdown {

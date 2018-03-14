@@ -155,5 +155,52 @@
       }
     }
   }
+}
 
+
+.panel__stats-icons-list {
+  margin-bottom: 30px;
+  li {
+    + li {
+      margin-left: 30px;
+    }
+  }
+  .ico-tobe-cleansed {
+    color: $toBeCleansed;
+  }
+  .ico-cleansed {
+    color: $cleansed;
+  }
+  .ico-inactive {
+    color: $danger;
+  }
+}
+
+
+.dashboard__poi-filters-options {
+  > li {
+    label, .form-control {
+      font-size: 12px;
+    }
+    + li {
+      margin-left: 3px;
+    }
+  }
+  .form-control {
+    padding: 5px;
+    width: 75px;
+  }
+}
+
+.filter-state-switch__label {
+  font-size: 12px;
+  + li {
+    .tgl-flip {
+      + .tgl-btn {
+        &:after, &:before {
+          top: 22px;
+        }
+      }
+    }
+  }
 }

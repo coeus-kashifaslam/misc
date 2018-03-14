@@ -37,6 +37,127 @@
 
 
 
+        <div class="list-filters dashboard__list-filters">
+    <div class="panel">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="rep__col-9">
+                    <ul class="list-inline poi-filters-options dashboard__poi-filters-options">
+                        <li>
+                            <div class="filter__label">
+                                <label>Channel</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All Channels</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter__label">
+                                <label>Country</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All Countries</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter__label">
+                                <label>City</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All Cities</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter__label">
+                                <label>State</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All States</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter__label">
+                                <label>Brand</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All Brands</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filter__label">
+                                <label>Category</label>
+                            </div>
+                            <div class="filter__options">
+                                <select class="form-control">
+                                    <option value="">All Categories</option>
+                                    <option value="">Option 01</option>
+                                    <option value="">Option 02</option>
+                                    <option value="">Option 03</option>
+                                    <option value="">Option 04</option>
+                                    <option value="">Option 05</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="reset-filter"><i class="fa fa-undo"></i> <span>Reset Filter</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rep__col-3">
+                    <div class="filter-state-switch">
+                        <ul class="list-unstyled tg-list">
+                            <li class="filter-state-switch__label">
+                                <label>POIs Status</label>
+                            </li>
+                            <li class="tg-list-item">
+                                <input class="tgl tgl-flip" id="cb5" type="checkbox" checked/>
+                                <label class="tgl-btn" data-tg-off="Inactive" data-tg-on="Active" for="cb5"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
         <div class="row">
     <div class="rep__col-7">
         <div class="section-rate__map-container">
@@ -159,7 +280,82 @@
     </div>
     <div class="clearfix"></div>
 </div>
-        
+
+
+        <div class="row mtop30">
+            <div class="rep__col-6 panel-equal-height">
+                <div class="panel">
+                    <div class="panel-heading panel-heading__dd-included">
+                        <h3 class="panel-title"><i class="fa fa-info-circle"></i> POIs management dynamics</h3>
+                        <div class="panel-header__dropdown">
+                            <select class="form-control">
+                                <option value="">Option 01</option>
+                                <option value="">Option 02</option>
+                                <option value="">Option 03</option>
+                                <option value="">Option 04</option>
+                                <option value="">Option 05</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="panel-body plr-0">
+                        <div class="panel__stats-icons-list">
+                            <ul class="list-inline">
+                                <li>
+                                    <i class="fa fa-dot-circle-o ico-tobe-cleansed"></i> <span>To be cleansed</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-dot-circle-o ico-cleansed"></i> <span>Cleansed</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-dot-circle-o ico-inactive"></i> <span>Inactive</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel__chart">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rep__col-6 panel-equal-height">
+                <div class="panel panel-equal-height panel__cleansing-detail">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-info-circle"></i> Submitted POIs per Chaannel</h3>
+                    </div>
+                    <div class="panel-body plr-0">
+
+                        <div class="rep__col-6 panel__chart"></div>
+                        <div class="rep__col-6 panel__chart-stats">
+                            <ul class="list-unstyled">
+                                <li class="cleansed">
+                                    Active <br> <label>1 POIs</label>
+                                    <div class="stats__ratio">
+                                        <p>7.1%</p>
+                                    </div>
+                                </li>
+                                <li class="in-active">
+                                    Inactive <br> <label>1 POIs</label>
+                                    <div class="stats__ratio">
+                                        <p>7.1%</p>
+                                    </div>
+                                </li>
+                                <li class="to-be-cleansed">
+                                    Cleansed <br> <label>1 POIs</label>
+                                    <div class="stats__ratio">
+                                        <p>7.1%</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
         <div class="panel mtop30">
             <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-map"></i>POI per channels</h3>
