@@ -1,0 +1,17 @@
+{% extends 'reputami/_layout/default.html' %}
+{% set pageTitle = "Index" %}
+
+{% block content %}
+
+<div class="box-sizing__border">
+    <div class="container-lg">
+        {% include 'reputami/_core/submenu.html' %}
+
+        {% include 'reputami/_partials/poi-per-channel-listing.html' %}
+
+
+    </div>
+</div>
+
+
+{% endblock %}
