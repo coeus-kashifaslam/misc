@@ -24,8 +24,12 @@
     margin-top: 10px;
     margin-bottom: 20px;
     &.pending {
+      background: $toBeCleansed;
+      color: $white;
+    }
+    &.completed {
       background: $cleansed;
-      color: white;
+      color: $white;
     }
   }
 
@@ -39,7 +43,7 @@
   padding-bottom: 20px;
   .section-rate__google-map {
     border: 1px solid $border;
-    height: 547px;
+    height: 431px;
   }
 }
 
@@ -188,7 +192,7 @@
   }
   .form-control {
     padding: 5px;
-    width: 75px;
+    width: 90px;
   }
 }
 
@@ -198,7 +202,8 @@
     .tgl-flip {
       + .tgl-btn {
         &:after, &:before {
-          top: 22px;
+          //top: 22px;
+          top: 0;
         }
       }
     }

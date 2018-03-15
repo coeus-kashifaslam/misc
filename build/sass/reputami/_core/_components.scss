@@ -51,6 +51,12 @@
       margin-right: 5px;
     }
   }
+  table {
+    th {
+      background: $black;
+      color: $white;
+    }
+  }
 }
 
 //Progress Bar

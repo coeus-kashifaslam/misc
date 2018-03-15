@@ -3,7 +3,9 @@
   color: $info-dark;
 }
 
-
+.container-lg {
+  background: $white;
+}
 //Forms
 input[type='text'], .form-control {
   border: 1px solid $border;

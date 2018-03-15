@@ -162,7 +162,16 @@
 .ico-35 {
   width: 35px;
 }
-
+.poi__list-pagination {
+  margin-top: 15px;
+  .pagination {
+    padding-bottom: 20px;
+    margin-top: 40px;
+  }
+  .last {
+    margin-left: 20px;
+  }
+}
 .pois__submitted-table {
   tbody {
     td {
