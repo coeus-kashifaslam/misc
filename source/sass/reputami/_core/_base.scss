@@ -28,20 +28,22 @@ p {
   margin: 0;
   line-height: 1.4;
 }
+.box-sizing__border {
+  table, .table {
+    width: 100%;
+    table-layout: fixed;
+    th, td {
+      text-align: left;
+      padding: 15px;
+    }
+  }
+  .table-bordered {
+    td, th {
+      border-bottom: 1px solid $border;
+    }
+  }
+}
 
-table, .table {
-  width: 100%;
-  table-layout: fixed;
-  th, td {
-    text-align: left;
-    padding: 15px;
-  }
-}
-.table-bordered {
-  td, th {
-    border-bottom: 1px solid $border;
-  }
-}
 .font-sm {
   font-size: 11px;
 }
