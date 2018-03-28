@@ -59,7 +59,7 @@
  	browsersyncOptions = {
 		server: {
 			baseDir: destination,
-			index: 'reputami.html'
+			index: 'default.html'
 		},
 		open: true,
 		notify: true
