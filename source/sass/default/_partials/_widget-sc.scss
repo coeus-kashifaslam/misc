@@ -43,12 +43,14 @@
 
 
 .form-control__wrapper {
-  background: url("../img/box.png") no-repeat left top;
-  background-size: 25px;
-  min-height: 40px;
-  padding-top: 3px;
-  padding-left: 35px;
-  display: inline-block;
+  label {
+    background: url("../img/box.png") no-repeat left top;
+    background-size: 25px;
+    min-height: 40px;
+    padding-top: 3px;
+    padding-left: 35px;
+    display: inline-block;
+  }
   .text-confirmation {
     display: none;
   }
@@ -61,10 +63,10 @@
       cursor: text;
     }
   }
-  &.requesting {
+  &.requesting label{
     background-image: url("../img/loader.gif");
   }
-  &.success {
+  &.success label{
     background-image: url("../img/check.png");
     .text-confirmation {
       display: inline-block;
@@ -92,6 +94,6 @@
   }
 
   .footer__logo {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
