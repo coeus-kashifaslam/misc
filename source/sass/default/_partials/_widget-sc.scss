@@ -1,15 +1,28 @@
 .widget__section {
-  background: $section-bg;
-  padding: 30px;
+  background: $white;
+  border: 1px solid $border-default;
+  border-radius: 7px;
+  padding: 0;
 }
 
 .section__header {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  background: $ekomi-green;
+  border-radius: 7px 0 7px 0;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 22px;
 }
 
 .section__body {
-  margin-top: 0;
+  padding: 30px 30px 20px 30px;
+  display: block;
+  clear: both;
+  p {
+    margin-top: 0;
+  }
 }
 
 .section__footer {
@@ -24,47 +37,55 @@
   .list-inline {
     margin-top: 5px;
     margin-bottom: 0;
+    font-size: 16px;
+    li {
+      vertical-align: middle;
+      &.item-separator {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      &.item-logo {
+        margin-left: 10px;
+        img {
+          width: 90px;
+        }
+      }
+    }
   }
   a {
-    color: $white;
-    text-decoration: underline;
+    color: $text;
+    text-decoration: none;
     &:hover,
     &:focus,
     &:active {
       color: $ekomi-green;
       outline: none;
+      text-decoration: none;
     }
   }
 }
-
-.footer__logo {
-  margin-top: -15px;
-}
-
 
 .form-control__wrapper {
   label {
     background: url("../img/checkbox/box.png") no-repeat left top;
     background-size: 25px;
     min-height: 40px;
-    padding-top: 3px;
+    padding-top: 0;
     padding-left: 35px;
     display: inline-block;
+    cursor: pointer;
   }
   .text-confirmation {
     display: none;
   }
-  &, label {
-    cursor: pointer;
-  }
   &.requesting,
   &.success {
-    &, label {
+    label {
       cursor: text;
     }
   }
   &.requesting label{
-    background-image: url("../img/checkbox/loader-green.gif");
+    background-image: url("../img/loader/loader-green.gif");
   }
   &.success label{
     background-image: url("../img/checkbox/check-green.png");
@@ -77,6 +98,11 @@
   }
   input[type='radio'] {
     display: none;
+    &:checked {
+      ~ label {
+        background-image: url("../img/checkbox/check-green.png");
+      }
+    }
   }
 }
 
@@ -91,9 +117,5 @@
   }
   .section__footer {
     text-align: center;
-  }
-
-  .footer__logo {
-    margin-top: 15px;
   }
 }
