@@ -98,11 +98,6 @@
   }
   input[type='radio'] {
     display: none;
-    &:checked {
-      ~ label {
-        background-image: url("../img/checkbox/check-green.png");
-      }
-    }
   }
 }
 
