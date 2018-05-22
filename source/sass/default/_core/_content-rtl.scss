@@ -1,0 +1,23 @@
+body {
+  direction: ltr;
+}
+.content__rtl {
+  direction: rtl;
+  .form-control__wrapper {
+    label {
+      padding-left: 0;
+      padding-right: 35px;
+      background-position: right top;
+    }
+  }
+  .footer__links {
+    .list-inline {
+      li {
+        &.item-logo {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
