@@ -1,19 +1,20 @@
 .widget__section {
   background: $white;
   border: 1px solid $border-default;
-  border-radius: 7px;
+  border-radius: $border-radius;
   padding: 0;
 }
 
 .section__header {
   margin-top: 0;
   margin-bottom: 0;
-  background: $ekomi-green;
-  border-radius: 7px 0 7px 0;
+  background: $header-bg;
+  border-radius: $border-radius 0 $header-radius 0;
   color: white;
   padding: 10px 30px;
   display: inline-block;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 .section__body {
