@@ -44,7 +44,7 @@
 
 .form-control__wrapper {
   label {
-    background: url("../img/box.png") no-repeat left top;
+    background: url("../img/checkbox/box.png") no-repeat left top;
     background-size: 25px;
     min-height: 40px;
     padding-top: 3px;
@@ -64,10 +64,10 @@
     }
   }
   &.requesting label{
-    background-image: url("../img/loader.gif");
+    background-image: url("../img/checkbox/loader-green.gif");
   }
   &.success label{
-    background-image: url("../img/check.png");
+    background-image: url("../img/checkbox/check-green.png");
     .text-confirmation {
       display: inline-block;
     }
