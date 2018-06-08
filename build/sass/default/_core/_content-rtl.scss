@@ -7,7 +7,10 @@ body {
     label {
       padding-left: 0;
       padding-right: 35px;
-      background-position: right top;
+      img {
+        left: auto;
+        right: 0;
+      }
     }
   }
   .footer__links {
