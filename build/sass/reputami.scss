@@ -1,3 +1,7 @@
+.box-sizing__border {
+  * {
+    box-sizing: border-box;
+  }
 @import "reputami/_core/var";
 @import "reputami/_core/button";
 @import "reputami/_core/grid";
@@ -7,6 +11,6 @@
 @import "reputami/_page/index";
 @import "reputami/_page/poi-listing";
 @import "reputami/_page/dashboard";
-
+}
 
 
