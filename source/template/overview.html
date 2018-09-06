@@ -1,0 +1,82 @@
+{% extends 'reputami/_layout/default.html' %}
+{% set pageTitle = "Reputami | Overview" %}
+
+{% block content %}
+<div class="box-sizing__border">
+    <div class="container page__overview-dashboard-content">
+        <div class="page__wrapper">
+            <div class="row">
+                <div class="rep__col-9">
+                    <div class="row row__entry-badges">
+                        <div class="rep__col-4 entries__badge-col">
+                            <div class="entries__badge">
+                                <div class="badge__bg bg-gradient-blue">
+                                    <div class="badge__header">
+                                        <img src="img/all-entry.png" alt="image not found" class="badge__icon">
+                                    </div>
+                                    <div class="badge__content">
+                                        <p class="badge__score-count">361</p>
+                                        <p class="badge__type">All Entries</p>
+                                    </div>
+                                </div>
+                                <div class="badge__footer">
+                                    <a href="#" class="cta__more">Show All ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rep__col-4 entries__badge-col">
+                            <div class="entries__badge">
+                                <div class="badge__bg bg-gradient-green">
+                                    <div class="badge__header">
+                                        <img src="img/positive-entry.png" alt="image not found" class="badge__icon">
+                                    </div>
+                                    <div class="badge__content">
+                                        <p class="badge__score-count">340</p>
+                                        <p class="badge__type">Positive Entries</p>
+                                    </div>
+                                </div>
+                                <div class="badge__footer">
+                                    <a href="#" class="cta__more">Show All ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rep__col-4 entries__badge-col">
+                            <div class="entries__badge">
+                                <div class="badge__bg bg-gradient-pink">
+                                    <div class="badge__header">
+                                        <img src="img/negative-entry.png" alt="image not found" class="badge__icon">
+                                    </div>
+                                    <div class="badge__content">
+                                        <p class="badge__score-count">17</p>
+                                        <p class="badge__type">Negative Entries</p>
+                                    </div>
+                                </div>
+                                <div class="badge__footer">
+                                    <a href="#" class="cta__more">Show All ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="row row__overview__line-chart">
+                        <div class="rep__col-12">
+                            <p>line chart goes here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rep__col-3">
+                    <div class="wrapper__circle-chart wrapper__sidebar-chart">
+                        <p>Circle chart content goes here</p>
+                    </div>
+                    <div class="wrapper__progressbar-chart wrapper__sidebar-chart">
+                        <p>Progressbar chart content goes here</p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
