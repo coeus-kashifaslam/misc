@@ -1,65 +1,99 @@
-(function () {
-    function Question (questionArg, answersArg, correctAnswerArg) {
-        this.q = questionArg;
-        this.a = answersArg;
-        this.c = correctAnswerArg;
-    }
+var mainController = (function () {
+    var Income = function (id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;
+    };
+    var Expense = function (id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;
+    };
 
-    Question.prototype.printToConsole = function () {
-        console.log(this.q);
-        for(var i = 0; i < this.a.length; i++) {
-            console.log(i+1 + ' ' + this.a[i]);
+    var data = {
+        items: {
+            inc: [],
+            exp: []
+        },
+        total: {
+            exp: 0,
+            inc: 0
         }
     };
 
-    Question.prototype.checkAnswer = function (el, callback) {
-        var sc1 = 0;
-        if(el === (this.c + 1)) {
-            console.log('Correct Answer');
-            sc1 = callback(true);
-        }
-        else {
-            console.log('Wrong Answer');
-            sc1 = callback(false);
+
+    return {
+        addItem: function (type, des, val) {
+            var newItem;
+            var ID = 0;
+
+            if(data.items[type].length > 0) {
+                ID = data.items[type][data.items[type].length - 1].id + 1;
+            }
+
+            if(type === 'inc') {
+                newItem = new Income(ID, des, val);
+            } else {
+                newItem = new Expense(ID, des, val);
+            }
+
+            data.items[type].push(newItem);
+        },
+
+        showData: function () {
+            console.log(data);
         }
 
-        this.displayScore(sc1);
     };
 
-    Question.prototype.displayScore = function (score) {
-        console.log('Your score is '+ score);
+})();
+
+var UIController =(function () {
+    var DOMStrings = {
+        typeDOM: '.add__type',
+        descriptionDOM: '.add__description',
+        valueDOM: '.add__value',
+        btnDOM: '.add__btn'
     };
 
-    function keepScore() {
-        var sc = 0;
-        return function (success) {
-            if(success) sc++;
-            return sc;
-        };
-    }
+    return{
+        getDomStrings: function () {
+            return DOMStrings;
+        },
 
-    var score = keepScore();
-
-
-    var questionsArray = [
-        new Question('Question 1', ['ans 1','ans 2','ans 3', 'ans 4'], 2),
-        new Question('Question 2', ['ans 1','ans 2'], 0),
-        new Question('Question 3', ['ans 1','ans 2','ans 3'], 1)
-    ];
-
-
-    function nextQuestion() {
-        var randomQuestion = Math.floor(Math.random() * questionsArray.length);
-        var question = questionsArray[randomQuestion];
-        question.printToConsole();
-        var promptAns = prompt('Please enter number of correct answer');
-
-        if (promptAns !== 'exit') {
-            question.checkAnswer(parseInt(promptAns), score);
-            nextQuestion();
+        getInpuValues: function () {
+            return {
+                type: document.querySelector(DOMStrings.typeDOM).value,
+                description: document.querySelector(DOMStrings.descriptionDOM).value,
+                value: document.querySelector(DOMStrings.valueDOM).value
+            };
         }
-    }
-    
-    nextQuestion();
+    };
+})();
 
-}());
+var appController = (function (UICtrl, mainCtrl) {
+
+    function setEventListeners() {
+        var DomElem = UICtrl.getDomStrings();
+        document.querySelector(DomElem.btnDOM).addEventListener('click', addItem);
+        document.addEventListener('keypress', function (e) {
+            if(e.keyCode === 13 || e.which === 13){
+                addItem();
+            }
+        });
+    }
+
+    function addItem() {
+        var newItem = UICtrl.getInpuValues();
+        mainCtrl.addItem(newItem.type, newItem.description, newItem.value);
+    }
+
+    return {
+        init: function () {
+            setEventListeners();
+        }
+    };
+
+})(UIController, mainController);
+
+appController.init();
