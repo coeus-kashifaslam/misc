@@ -1,0 +1,127 @@
+$input-bg: #f2f2f2;
+$input-placeholder: #7f7f7f;
+$input-radius: 5px;
+$black: #000;
+
+
+.section__location-information {
+
+
+  header {
+    position: relative;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    .section__title {
+      color: $black;
+      font-size: 35px;
+      margin: 0;
+    }
+    .trigger__upload-logo {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $black;
+      &:hover, &:focus, &:active {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  .li__form-control,
+  textarea {
+    border-radius: $input-radius;
+    padding: 7px 12px;
+    border: 0 none;
+    background-color: $input-bg;
+    width: 100%;
+    font-size: 16px;
+    font-family: $font-family;
+    @include placeholder {
+      color: $input-placeholder;
+    }
+  }
+
+  textarea {
+    height: 172px;
+    resize: none;
+  }
+
+  label {
+    color: $black;
+    font-size: 20px;
+  }
+  .form__row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    .form__col {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+      &:first-child {
+        text-align: right;
+        padding-right: 30px;
+      }
+      &:nth-child(2) {
+        padding-right: 20px;
+      }
+    }
+
+    + .form__row {
+      margin-top: 10px;
+    }
+
+    &.align__top {
+      margin-top: 35px;
+      margin-bottom: 25px;
+      .form__col {
+        vertical-align: top;
+      }
+    }
+    .form__row {
+      margin-top: 10px;
+      .form__col {
+        &:first-child {
+          padding-right: 0;
+        }
+        &:nth-child(2) {
+          padding-right: 0;
+          padding-left: 10px;
+        }
+      }
+    }
+    &.form__row-footer {
+      .form__col {
+        &:first-child {
+          padding-right: 0;
+          text-align: left;
+          padding-left: 33.33333%;
+        }
+        p, .btn {
+          display: inline-block;
+          vertical-align: top;
+        }
+        p {
+          max-width: 72%;
+          padding-left: 15px;
+          font-size: 14px;
+          font-style: italic;
+          color: $black;
+        }
+      }
+      .btn {
+        width: 150px;
+        text-align: center;
+        background-color: $ekomi-green;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .form__col-label-2 {
+    margin-top: 28px;
+  }
+}

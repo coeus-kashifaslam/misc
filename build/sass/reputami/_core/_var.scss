@@ -2,11 +2,13 @@ $font-size: 16px;
 $panel-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 $shadow: 0 3px 3px 0 rgba(0,0,0,.1);
 $radius: 4px;
+$font-family: 'Signika', sans-serif;
 
 
 $white: #fff;
 $black: #000;
 $border: #e0e0e0;
+$ekomi-green: #2da137;
 
 $primary: #6FB5FC;
 $success: #80D47F;
@@ -36,5 +38,10 @@ $cleansed: $success;
 $toBeCleansed: $primary;
 $theme-orange: $orange;
 
-
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
 

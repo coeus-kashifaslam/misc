@@ -32,7 +32,7 @@ $page-content-bg: #eeeeee;
 }
 
 .page__overview-dashboard-content {
-  background-color: $page-content-bg;
+  //background-color: $page-content-bg;
 }
 
 .row__entry-badges {
@@ -50,7 +50,8 @@ $page-content-bg: #eeeeee;
 
   .badge__header {
     text-align: right;
-    height: 45px;
+    //height: 45px;
+    height: 80px;
     img {
       width: 30px;
     }
@@ -58,16 +59,19 @@ $page-content-bg: #eeeeee;
   .badge__content {
     .badge__score-count {
       font-weight: 300;
-      font-size: 30px;
+      //font-size: 30px;
+      font-size: 35px;
       line-height: 1;
     }
     .badge__type {
-      font-size: 13px;
+      //font-size: 13px;
+      font-size: 15px;
     }
   }
   .badge__footer {
     background-color: $badge-footer-bg;
-    padding: 10px 20px;
+    //padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 0 0 $badge-element-radius $badge-element-radius;
     a {
       font-size: 13px;
@@ -82,11 +86,15 @@ $page-content-bg: #eeeeee;
 
 
 .row__overview__line-chart {
-  margin-top: 50px;
+  //margin-top: 50px;
+  margin-top: 0;
 }
 
 .wrapper__sidebar-chart {
   + .wrapper__sidebar-chart {
-    margin-top: 50px;
+    //margin-top: 50px;
+    margin-top: 15px;
+    background-color: #eeeeee;
+    padding: 5px;
   }
 }
