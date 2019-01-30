@@ -37,7 +37,7 @@ var mainController = (function () {
     var countSum = function (type) {
         var sum = 0;
         data.items[type].forEach(function (cur) {
-            sum += cur.value;
+            sum += parseFloat(cur.value);
         });
 
         data.total[type] = sum;
