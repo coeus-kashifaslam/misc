@@ -64,5 +64,15 @@
         }
       }
     }
+
+
+    .dsidx-call-to-action {
+      background-image: none;
+      background-color: $body-bg;
+    }
+
+    .dsidx-large-button {
+      @include style-btn-green();
+    }
   }
 }

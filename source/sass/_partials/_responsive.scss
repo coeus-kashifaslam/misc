@@ -77,4 +77,24 @@
       }
     }
   }
+
+
+  #dsidx-profile-header {
+    display: none !important;
+  }
+
+  #dsidx-top-search {
+    .dsidx-bootstrap-col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .dsidx-bootstrap-col-md-3 {
+      flex: 0 0 33%;
+      max-width: 33%;
+      &.dsidx-search-tag-checkbox {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
 }

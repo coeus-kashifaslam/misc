@@ -1,8 +1,12 @@
 /************* Idx Search bar **************/
 
 #dsidx-top-search {
+  #dsidx-search-form-wrap {
+    padding: 1px 1px 0;
+  }
   #dsidx-search-bar {
     padding: 10px;
+    background: $body-bg;
     input[type='text'] {
       @include style-input-text();
       &:focus {
@@ -72,9 +76,9 @@
 .dsidx-search-bar-expand-collapse-button {
   background-color: transparent;
   font-size: 20px;
+  color: $label-color;
   + .label {
     @include style-input-label();
-    color: white !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
@@ -82,4 +86,9 @@
 
 .dsidx-top-search-section-header-bar  {
   border-bottom: 1px dotted #E9E9E9;
+}
+
+.dsidx-search-bar-more-filters {
+  background: $body-bg;
+  border-color: $body-bg;
 }

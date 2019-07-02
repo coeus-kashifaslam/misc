@@ -116,6 +116,11 @@
       &:last-of-type {
         border-bottom: 0 none;
       }
+      &.dsidx-secondary-data-bedsbaths {
+        span {
+          float: none;
+        }
+      }
     }
   }
 
