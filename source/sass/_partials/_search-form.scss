@@ -1,0 +1,115 @@
+/************* Search Form **************/
+
+.dsidx-resp-search-form fieldset {
+  display: block;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-resp-area label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-autocomplete-box input[type="text"],
+.dsidx-resp-search-box-modern-view .dsidx-resp-area input[type="text"],
+.dsidx-resp-search-box-modern-view .dsidx-resp-area select,
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  border: 1px solid #dedede !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  height: 40px !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  background-color: #ffffff !important;
+  line-height: 1.42857 !important;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-autocomplete-box input[type="text"]:focus,
+.dsidx-resp-search-box-modern-view .dsidx-resp-area input[type="text"]:focus,
+.dsidx-resp-search-box-modern-view .dsidx-resp-area select:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  border-color: #66afe9 !important;
+  outline: 0 none;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-autocomplete-box input[type="text"] {
+  color: #555555 !important;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-resp-area select,
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff url(http://divergent.coeus-solutions.de/wp-content/themes/realto/images/select-large-bg.png) no-repeat 100% 50%;
+  line-height: 17px;
+  color: #999;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-autocomplete-box,
+.dsidx-resp-search-box-modern-view .select2-container--default .select2-selection--multiple {
+  border: 0 none !important;
+  border-radius: 0 !important;
+}
+
+.dsidx-resp-search-box-modern-view .dsidx-resp-area-submit input[type="submit"] {
+  background: rgba(105, 185, 9, 1);
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin: 0;
+  height: 40px !important;
+  padding: 6px 16px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+
+#dsidx-resp-quick-search-box-type,
+#dsidx-resp-quick-search-box-status {
+  width: initial !important;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  padding-right: 30px !important;
+  height: auto !important;
+  min-height: 40px !important;
+}
+
+.select2-selection--multiple:after {
+  display: none;
+}
+
+
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0;
+  line-height: 1.9;
+}
+
+.dsidx-resp-search-box-modern-view {
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px 30px 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+.dsidx-resp-search-form {
+  .dsidx-resp-area-container-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

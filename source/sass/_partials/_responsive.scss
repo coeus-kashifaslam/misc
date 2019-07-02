@@ -1,0 +1,80 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  #dsidx-listings {
+    li {
+      &.dsidx-listing-container {
+        width: 48.5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #dsidx-listings {
+    li {
+      &.dsidx-listing-container {
+        width: 100%;
+      }
+    }
+    .dsidx-listing {
+      max-width: none;
+      .dsidx-media {
+        max-width: none;
+        padding: 0 !important;
+        .dsidx-photo {
+          max-width: none;
+          a {
+            img {
+              max-width: none;
+            }
+          }
+        }
+      }
+      .dsidx-data {
+        margin: 0 !important;
+      }
+
+      .dsidx-primary-data {
+        padding-top: 0;
+        margin-bottom: 0;
+        .dsidx-address {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .box-container {
+    > .padding30 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .dsidx-resp-search-form {
+    .dsidx-resp-area-container-row {
+      flex-direction: column;
+    }
+  }
+  .dsidx-resp-search-box-modern-view {
+    &.dsidx-resp-horizontal {
+      .dsidx-resp-location-area,
+      .dsidx-resp-status-area,
+      .dsidx-resp-type-area,
+      .dsidx-quick-resp-min-baths-area,
+      .dsidx-quick-resp-price-area,
+      .dsidx-resp-area-submit {
+        width: 100% !important;
+      }
+    }
+  }
+  .dsidx-resp-area {
+    &.dsidx-resp-area-half {
+      &.dsidx-resp-area-right {
+        padding-left: 0 !important;
+      }
+      &.dsidx-resp-area-left {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
