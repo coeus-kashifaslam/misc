@@ -100,18 +100,11 @@
     margin-top: 0;
     width: 100%;
     > div {
-      float: none;
-      font-weight: 600;
-      color: #363636;
-      border-bottom: 1px dotted $border;
-      padding: 13px 0;
-      margin-bottom: 0 !important;
-      width: 100%;
-      font-size: 15px;
+        @include style-items-list-parent();
+        @include style-items-list-label();
       span {
-        font-weight: 300 !important;
+        @include style-items-list-value();
         float: right;
-        font-size: 15px !important;
       }
       &:last-of-type {
         border-bottom: 0 none;

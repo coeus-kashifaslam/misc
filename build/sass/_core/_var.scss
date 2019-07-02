@@ -22,7 +22,7 @@ $label-line-height: 25px;
 $input-border-color: #dedede;
 $input-border-color-focused: #66afe9;
 $input-border: 1px solid $input-border-color;
-$input-height: 40x;
+$input-height: 40px;
 $input-padding: 6px 12px;
 $input-font-size: 14px;
 $input-bg-color: $white;
@@ -52,3 +52,14 @@ $select-option-color: #888888;
 
 $select-option-selected-color: $white;
 $select-option-selected-bg-color: #5897fb;
+
+
+//Items-list
+$items-list-font-weight: 600;
+$items-list-color: #363636;
+$items-list-border: 1px dotted #E9E9E9;
+$items-list-padding: 13px 0;
+$items-list-font-size: 15px;
+
+$items-list-value-font-weight: 300;
+$items-list-value-font-size: 15px;

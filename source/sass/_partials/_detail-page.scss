@@ -1,5 +1,6 @@
 /************* Detail Page **************/
 .dsidx-details {
+  font-family: $font;
   &#dsidx {
     h3 {
       margin-bottom: 15px;
@@ -38,9 +39,16 @@
       font-size: 15px !important;
       padding-top: 13px !important;
       padding-bottom: 13px !important;
+      color: $items-list-color;
     }
     th {
       font-weight: bold !important;
+    }
+    td {
+      .dsidx-primary-data-values, span {
+        font-size: $items-list-font-size;
+        @include style-items-list-value();
+      }
     }
   }
 
@@ -73,6 +81,64 @@
 
     .dsidx-large-button {
       @include style-btn-green();
+      line-height: 2;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .dsidx-headerbar,
+    .dsidx-table-header,
+    .dsidx-headerbar-green {
+      background: $body-bg none;
+      padding: 8px 13px;
+      border: $items-list-border;
+      border-bottom: 0 none;
+    }
+
+    .dsidx-header-title {
+      @include style-items-list-label();
+      color: $items-list-color !important;
+      font-family: $font;
+      font-weight: bold !important;
+    }
+
+    #divMortgageCalculator,
+    #dsidx-contact-form {
+      label {
+        @include style-input-label();
+      }
+      input[type="text"], textarea {
+        @include style-input-text();
+      }
+      select {
+        @include style-dsidx-select();
+        color: $select-option-color;
+        background-position: 102% 14px;
+      }
+
+      input[type="button"] {
+        @include style-btn-green();
+      }
+
+    }
+
+    .dsidx-contact-form {
+      border: $items-list-border;
+    }
+    #dsidx-contact-form {
+      textarea {
+        height: 200px !important;
+      }
     }
   }
 }
+
+#dsidx-secondary-data {
+  tr {
+    &:nth-child(even) {
+      background-color: transparent;
+    }
+  }
+}
+

@@ -39,11 +39,12 @@
   border: 1px solid transparent !important;
   font-weight: $btn-font-weight;
   font-size: $btn-font-size;
-  border-radius: $btn-border-radius;
-  background: $btn-bg-color;
+  border-radius: $btn-border-radius !important;
+  background: $btn-bg-color !important;
   color: $btn-text-color;
   height: $btn-height !important;
   padding: $btn-padding;
+  font-family: $font !important;
 }
 
 @mixin style-dsidx-select {
@@ -56,6 +57,7 @@
   line-height: $select-line-height;
   height: $select-height;
   padding: $select-padding;
+  border: $input-border;
 }
 
 @mixin style-custom-select-option {
@@ -71,4 +73,23 @@
 @mixin style-custom-select-option-selected {
   color: $select-option-selected-color;
   background-color: $select-option-selected-bg-color;
+}
+
+@mixin style-items-list-parent {
+  float: none;
+  width: 100%;
+  margin-bottom: 0 !important;
+  border-bottom: $items-list-border;
+  padding: $items-list-padding;
+  color: $items-list-color;
+}
+
+@mixin style-items-list-label {
+  font-weight: $items-list-font-weight;
+  font-size: $items-list-font-size;
+}
+
+@mixin style-items-list-value {
+  font-weight: $items-list-value-font-weight !important;
+  font-size: $items-list-value-font-size !important;
 }
