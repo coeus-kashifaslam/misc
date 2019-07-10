@@ -1,0 +1,64 @@
+ol {
+  li {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    &:before {
+      position: absolute;
+      margin-right: 100%;
+      right: 10px;
+    }
+  }
+}
+
+.decimal__numbered {
+  counter-reset: parent;
+  > li {
+    &:before {
+      counter-increment: parent;
+      content: counter(parent) '.';
+    }
+  }
+  ol {
+    counter-reset: child;
+    padding-left: 35px;
+     > li {
+       &:before {
+         counter-increment: child;
+         content: counter(parent) '.' counter(child) '. ';
+       }
+     }
+  }
+
+  .bracket__alpha {
+    counter-reset: lowerAlpha;
+    > li {
+      &:before {
+        text-transform: lowercase;
+        content: '(' counter(lowerAlpha, lower-alpha) ')';
+        counter-increment: lowerAlpha;
+      }
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+  margin-bottom: 15px;
+}
