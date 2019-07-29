@@ -1,0 +1,71 @@
+.tag-line span{
+  color: #8C8018;
+  font-weight: bold;
+  font-size: 36px;
+}
+body {
+  color: #333;
+}
+.page-id-518 .info-head{
+  text-align:center;
+  text-decoration:underline;
+}
+.page-id-18 .con-sidebar .textwidget p,
+.page-id-18 .con-sidebar .textwidget h6{
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: unset;
+}
+.page-id-18 .con-sidebar .textwidget .widget-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+footer .footer-partners {
+  width: 50%;
+  float: left;
+  text-align:left;
+}
+footer .footer-partners img{
+  height:100px;
+}
+.tag-line {
+  font-family: 'Droid Serif',serif;
+}
+.footer-widget h2 {
+  font-size: 25px;
+  line-height: 31px;
+}
+@media (min-width: 1200px) {
+  .tag-line {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    font-size:21px;
+  }
+  .phone-number{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+  }
+}
+.page-content h2.page-title{
+  font-size:24px;
+  font-weight:600;
+}
+@media (min-width: 400px) and (max-width: 1199px) {
+  .tag-line {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    font-size:16px;
+  }
+  .phone-number{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+  }
+}
+
+#dsidx-contact-form > table tr:nth-last-child(2) {
+  display: none;
+}

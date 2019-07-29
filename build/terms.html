@@ -5,69 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index</title>
-    <style>
-        ol li {
-            display: block;
-            position: relative;
-            margin-bottom: 15px;
-        }
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        ol li:before {
-            position: absolute;
-            margin-right: 100%;
-            right: 10px;
-        }
-
-        .decimal__numbered {
-            counter-reset: parent;
-        }
-
-        .decimal__numbered > li:before {
-            counter-increment: parent;
-            content: counter(parent) ".";
-        }
-
-        .decimal__numbered ol {
-            counter-reset: child;
-            padding-left: 35px;
-        }
-
-        .decimal__numbered ol > li:before {
-            counter-increment: child;
-            content: counter(parent) "." counter(child) ". ";
-        }
-
-        .decimal__numbered .bracket__alpha {
-            counter-reset: lowerAlpha;
-        }
-
-        .decimal__numbered .bracket__alpha > li:before {
-            text-transform: lowercase;
-            content: "(" counter(lowerAlpha, lower-alpha) ")";
-            counter-increment: lowerAlpha;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .text-underline {
-            text-decoration: underline;
-        }
-
-        .d-inline-block {
-            display: inline-block;
-        }
-
-        .d-block {
-            display: block;
-            margin-bottom: 15px;
-        }
-    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the _page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     
@@ -261,5 +210,15 @@
     </li>
 
 </ol>
+
+
+
+
+    <!--&lt;!&ndash;JQUERY&ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+
+<!--&lt;!&ndash;BOOTSTRAP&ndash;&gt;-->
+<!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
 </body>
 </html>
